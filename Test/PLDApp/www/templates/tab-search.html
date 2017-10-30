@@ -1,0 +1,69 @@
+<ion-view class="fancy-select-items modal" view-title="FilterData">
+       
+              <ion-content class="hbs" padding="true">
+            
+            			
+		              		<div class="list">
+
+						      	<div class="item item-input item-select">
+							        <div class="input-label">
+							          Country
+							        </div>
+							        <select data-ng-model="country" data-ng-init='country = countries[0]' data-ng-options="country.country for country in countries">
+				
+							        </select>
+						      	</div>
+						      	<!-- <div class="item item-input item-select">
+							        <div class="input-label">
+							           Citizenship
+							        </div>
+							        <select data-ng-model="citizenship" data-ng-init='citizenship = citizenships[0]' data-ng-options="citizenship.citizenship for citizenship in citizenships">
+							        </select>
+						      	</div> -->
+						      	<div class="item item-input item-select">
+							        <div class="input-label">
+							           Living Group
+							        </div>
+							        <select data-ng-model="livingGroup" data-ng-init='livingGroup = livingGroups[0]' data-ng-options="livingGroup.livingGroup for livingGroup in livingGroups">
+							        </select>
+						      	</div>
+						      	<!-- <div class="item item-input item-select">
+							        <div class="input-label">
+							           Company
+							        </div>
+							        <select data-ng-model="company" data-ng-init='company = companies[0]' data-ng-options="company.company for company in companies">
+							        </select>
+						      	</div> -->
+						      	<div class="item item-input item-select">
+							        <div class="input-label">
+							           Industry
+							        </div>
+							        <select data-ng-model="industry" data-ng-init='industry = industries[0]' data-ng-options="industry.industry for industry in industries">
+							        </select>
+						      	</div>
+						      	<div class="item item-input item-select">
+							        <div class="input-label">
+							           Functional Area
+							        </div>
+							        <select data-ng-model="functional"  data-ng-init='functional = functionals[0]' data-ng-options="functional.functional for functional in functionals">
+							        </select>
+						      	</div>
+						    </div>  
+						    <div>
+						    	<a class="button button-block hbs" data-ng-click="resetCriteria()">Reset Criteria</a>
+						    </div>  
+				    	
+				    <div>
+
+				    	<ion-list>
+					      <ion-item class="item-avatar" ng-repeat="friend in friends | personFilter:country.country:citizenship.citizenship:livingGroup.livingGroup:company.company:industry.industry:functional.functional | orderBy:'name'" type="item-text-wrap" href="#/home/friend/{{friend.id}}">
+					        <img ng-src="img/watermark.jpeg">
+					        <h2>{{friend.name}}</h2>
+					        <h4>{{friend.homeCity}}, {{friend.country}}</h4>
+					      </ion-item>
+					    </ion-list>
+
+				    </div>
+              </ion-content>
+              
+</ion-view>

@@ -1,0 +1,19 @@
+	<ion-view>
+	<ion-header-bar class="hbs">
+        	<h1 class="title white">My PLD19</h1>
+    </ion-header-bar>
+    <ion-content padding="true">
+    	
+        <form ng-controller="LoginCtrl">
+        <div class="list bottom-padding">
+          <label class="item item-input">
+            <input type="text" ng-model="email" placeholder="Please enter your hbs pld email">
+          </label>
+          <p class="error top-down-padding">{{placeHolder}}</p>
+          <a class="button button-block hbs" ng-click="validateLogin(email)">Sign Me In</a>
+        </div>        
+       </form>
+       <div class="item item-image no-border">
+          <img class="img-responsive" src="img/veritas.jpg">
+      </div>
+  </ion-view>

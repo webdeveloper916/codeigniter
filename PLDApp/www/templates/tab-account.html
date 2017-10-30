@@ -1,0 +1,72 @@
+<ion-view class="hbs" view-title="{{myAccount.name}}">
+<ion-nav-bar class="bar-stable">   
+</ion-nav-bar>
+
+  <ion-content class="padding">
+
+
+   <div class="row padding">
+          <div class-"col col-50">
+            
+            <img class="profile-image" ng-src="img/watermark.jpeg"> 
+            <p class="hbs centered">{{myAccount.nickName}}</p>
+          </div>
+          <div class-"col col-50">
+           <span class="padding">
+              {{myAccount.name}}
+            </span>
+            
+            <h5 type="phone" class="hbs icon ion-ios7-telephone-outline padding-left">
+                <a class="hbs" href="tel:{{myAccount.businessPhone}}">{{myAccount.businessPhone}}</a>
+            </h5>
+            <h5 type="email" class="hbs icon ion-email padding-left">
+                <a class="hbs" href="mailto:{{myAccount.hbsEmail}}">{{myAccount.hbsEmail}}</a>
+            </h5>
+            <h5 type="email" class="hbs icon ion-email padding-left">
+                <a class="hbs" href="mailto:{{myAccount.personalEmail}}">{{myAccount.personalEmail}}</a>
+            </h5>
+           
+          </div>
+   </div>           
+
+   
+
+
+      <div class="hbs list card">
+        <p> Account information in disabled for edit for Alpha version</p>
+        <label class="item">
+          <span  class="bold" type="text">Living Group: </span>
+          <span type="text">Mc-Arthor-Hall-{{myAccount.livingGroup}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Company: </span>
+          <span type="text">{{myAccount.company}}</span>
+        </label>
+
+        <label class="item">
+          <span class="bold" type="text">Title: </span>
+          <span type="text">{{myAccount.title}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Functional: </span>
+          <span type="text">{{myAccount.functional}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Industry: </span>
+          <span type="text">{{myAccount.industry}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Citizenship: </span>
+          <span type="text">{{myAccount.citizenship}}</span>
+        </label>
+
+        <label class="item">
+          <span class="bold" type="text">Website : </span>
+          <a class="hbs" href="{{myAccount.website}}" target="_blank">{{myAccount.website}}</a>
+        </label>
+
+        </label>
+      </div>
+
+  </ion-content>
+</ion-view>

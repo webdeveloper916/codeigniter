@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /css
+Disallow: /fonts
+Disallow: /images
+Disallow: /js
+Disallow: /vendor
+Disallow: /mail.php
+Disallow: /index.php
+
+sitemap : http://www.techroversolutions.com/sitemap.xml 
+
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/3750507.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove
+
+
+Sitemap: http://techroversolutions.com/sitemap.xml
+
+Sitemap: https://online.webceo.com/submission/smaps/8130b16f.xml.gz

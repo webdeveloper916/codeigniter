@@ -1,0 +1,13 @@
+<ion-view  class="hbs" view-title="Friends">
+  <ion-content padding="true">
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="friend in friends | orderBy:'name'" type="item-text-wrap" 
+      		href="#/home/friend/{{friend.id}}">
+          <img src='img/watermark.jpeg'/>
+        <!--img ng-src="{{friend.face}}"-->
+        <h2>{{friend.name}}</h2>
+        <h4>{{friend.homeCity}}, {{friend.country}}</h4>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

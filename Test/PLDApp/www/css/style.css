@@ -1,0 +1,124 @@
+/* Empty. Add your own CSS if you like */
+.item-image-logo {
+  padding: 0;
+  text-align: left; }
+  .item-image img:first-child, .item-image .list-img {
+    width: 20%;
+    vertical-align: middle; }
+
+ fancy-select .list {
+  margin: -1px 0; }
+
+/* Items */
+/* line 13, ../scss/modules/_fancy-select.scss */
+.fancy-select-items {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  /* line 19, ../scss/modules/_fancy-select.scss */
+  .fancy-select-items .item {
+    overflow: hidden;
+    /* Clearfix */ }
+
+/* line 24, ../scss/modules/_fancy-select.scss */
+.fancy-select-items label p {
+  height: 32px;
+  line-height: 32px; }
+
+/* line 29, ../scss/modules/_fancy-select.scss */
+.fancy-select-icon {
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+  text-align: center; }
+
+  .profile-image{
+    width:  100px;
+    height: 100px;
+    text-align: center;
+  }
+  .image{
+    display: block;
+  }
+
+  .hbs{
+    background-color: #601F1F;
+    color: white;
+
+  }
+
+  .hbs:hover{
+    font-weight: bold;
+    color: white;
+  }
+
+  .no-border{
+    border: none;
+  }
+
+  .white{
+    color: white;
+  }
+  .centered{
+    text-align: center;
+  }
+
+  .bottom-padding {
+    padding-bottom: 50px;
+  }
+
+  .top-down-padding{
+    padding-top: 25px;
+    padding-bottom: 25;
+  }
+
+  .error{
+    color: red;
+  }
+
+.left-div {
+    float: left;
+    width: 150px;
+    height: 150pxpx;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+
+    
+}
+.right-div {
+    padding-left: 130px;
+    width: 100%;
+}
+
+.profile-title{
+  padding-left: 15px;
+
+}
+
+.top-div{
+    float:left; 
+}
+.bottom-div{
+    float:left; 
+    width: 100%;
+} 
+
+.left-column{
+  padding: 10px;
+  border: 1px;
+   border:1px solid gray;
+
+}
+
+.right-column{
+  padding: 10px;
+  border: 1px;
+  border:1px solid gray;
+  text-align: right;
+}
+
+.bold{
+  font-weight: bold;
+}

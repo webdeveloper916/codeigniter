@@ -1,0 +1,71 @@
+<ion-view class="hbs" view-title="{{friend.name}}">
+<ion-nav-bar class="bar-stable">   
+</ion-nav-bar>
+
+  <ion-content class="padding">
+
+
+   <div class="row padding">
+          <div class-"col col-50">
+            
+            <img class="profile-image" ng-src="img/watermark.jpeg"> <!--ng-src="{{friend.face}}"--> 
+            <p class="hbs centered">{{friend.nickName}}</p>
+          </div>
+          <div class-"col col-50">
+           <span class="padding">
+              {{friend.name}}
+            </span>
+            
+            <h5 type="phone" class="hbs icon ion-ios7-telephone-outline padding-left">
+                <a class="hbs" href="tel:{{friend.businessPhone}}">{{friend.businessPhone}}</a>
+            </h5>
+            <h5 type="email" class="hbs icon ion-email padding-left">
+                <a class="hbs" href="mailto:{{friend.hbsEmail}}">{{friend.hbsEmail}}</a>
+            </h5>
+            <h5 type="email" class="hbs icon ion-email padding-left">
+                <a class="hbs" href="mailto:{{friend.personalEmail}}">{{friend.personalEmail}}</a>
+            </h5>
+           
+          </div>
+   </div>           
+
+   
+
+
+      <div class="hbs list card">
+        <label class="item">
+          <span  class="bold" type="text">Living Group: </span>
+          <span type="text">Mc-Arthor-Hall-{{friend.livingGroup}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Company: </span>
+          <span type="text">{{friend.company}}</span>
+        </label>
+
+        <label class="item">
+          <span class="bold" type="text">Title: </span>
+          <span type="text">{{friend.title}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Functional: </span>
+          <span type="text">{{friend.functional}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Industry: </span>
+          <span type="text">{{friend.industry}}</span>
+        </label>
+        <label class="item">
+          <span class="bold" type="text">Citizenship: </span>
+          <span type="text">{{friend.citizenship}}</span>
+        </label>
+
+        <label class="item">
+          <span class="bold" type="text">Website : </span>
+          <a class="hbs" href="{{friend.website}}" target="_blank">{{friend.website}}</a>
+        </label>
+
+        </label>
+      </div>
+
+  </ion-content>
+</ion-view>
